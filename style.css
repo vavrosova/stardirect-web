@@ -1,0 +1,74 @@
+/*
+Stardirect s.r.o. web style
+style.css
+*/
+
+html, body {
+	margin: 0;
+	font-family: 'Roboto Slab', serif;
+	line-height: 1.7;
+}
+header {
+	background-color: #2cb571;
+	padding: 2rem 1rem 2rem 1rem;
+	text-align: center;
+}
+footer {
+	margin: 1rem;
+	font-size: small;
+   font-style: italic;
+	text-align: center;
+}
+h1 {
+	margin: 0;
+	font-family: 'Yesteryear', cursive;
+	font-size: 300%;
+	line-height: 1;
+	font-weight: normal;
+}
+h2 {
+	margin: 0;
+	font-style: italic;
+	font-size: 110%;
+}
+a {color: black}
+a:hover {color: gray}
+
+section.content {
+	display: flex;
+   justify-content: center;
+	margin: 1rem;
+}
+section.content > div {
+	width: 50%;
+	padding: 1rem 2rem 1rem 2rem;
+}
+section.content .column-left {
+	border-right: 1px dashed black;
+	text-align: right;
+}
+.material-icons {
+	 position: relative;
+    top: 0.35rem;
+    margin-right: 1ex;
+	 font-size: 125%;
+}
+
+/* Responsive */
+@media only screen and (max-width: 600px) {
+	section.content {
+		display: block;
+	}
+	section.content > div {
+		width: auto;
+		padding-top: 0;
+	}
+	section.content .column-left {
+		text-align: center;
+		border-right: none;
+		padding-bottom: 0;
+	}
+	section.content .column-right {
+		text-align: center;
+	}
+}
